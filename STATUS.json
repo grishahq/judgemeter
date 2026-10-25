@@ -15,14 +15,16 @@
     "upstream_offline_tests": 9,
     "statsmodels_tables": 21,
     "clean_wheel_install": "passed",
-    "live_model_test": "unavailable: missing API credentials; failed attempt preserved"
+    "live_model_test": "unavailable: missing API credentials; failed attempt preserved",
+    "github_actions": "passed on release and campaign commits",
+    "independent_review": "No release-blocking correctness issue; wheel source/templates/CLI, install, demo, HTML, gates and cyclic-input handling verified by separate agent."
   },
   "github_release": {
     "state": "published",
     "version": "0.1.0",
     "maturity": "experimental prerelease",
     "url": "https://github.com/grishahq/judgemeter/releases/tag/v0.1.0",
-    "tag_commit": "cbfcf59",
+    "tag_commit": "cbfcf591649a42fdec3fdf78e3a136df87b90378",
     "public_wheel_clean_install": "passed",
     "tag_policy": "annotated tag, never rewritten"
   },
@@ -37,7 +39,14 @@
     "copy": "campaign/CAMPAIGN.md",
     "machine_readable": "campaign/campaign.json",
     "scheduled": [],
-    "published": []
+    "published": [],
+    "reservations": [
+      "2026-10-28T10:00:00+04:00",
+      "2026-10-30T10:00:00+04:00",
+      "2026-11-02T10:00:00+04:00",
+      "2026-11-04T10:00:00+04:00",
+      "2026-11-06T10:00:00+04:00"
+    ]
   },
   "evidence_paths": [
     "evidence/judgemeter-tests.txt",
@@ -53,7 +62,7 @@
     "campaign/CAMPAIGN.md"
   ],
   "blockers": [
-    "Shared social-publish.lock temporarily held by callstencil; native social access check deferred."
+    "Awaiting shared publishing lock; held by toolcrop during native scheduling."
   ],
   "next_actions": [
     "Inspect native queues and exact accounts under shared lock",

@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-25",
+  "timezone": "Asia/Dubai",
+  "accounts": {
+    "linkedin": {"name": "Gregory Gvadzabia", "profile": "https://www.linkedin.com/in/gregogv/", "verified_from": "Authenticated feed sidebar and native post composer"},
+    "x": {"name": "Grisha", "handle": "@grishahq", "profile": "https://x.com/grishahq", "verified_from": "Authenticated Account menu and Profile link"}
+  },
+  "native_queue_before": {
+    "linkedin": [{"scheduled_local": "2026-10-26T03:14:00+04:00", "subject": "recursive-llm v0.5.0 first PyPI release", "action": "preserved"}],
+    "x": [{"scheduled_local": "2026-10-26T03:14:00+04:00", "subject": "recursive-llm v0.5.0 first PyPI release", "action": "preserved"}]
+  },
+  "prepared": {"linkedin_posts": 5, "x_threads": 5},
+  "reserved": true,
+  "scheduled": [],
+  "published": [],
+  "state": "Native accounts and queues verified; waiting for shared publishing lock before scheduling. X populated multi-post composer exposes Schedule; final behavior must be verified before claiming thread scheduling."
+}

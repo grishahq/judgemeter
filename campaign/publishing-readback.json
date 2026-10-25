@@ -2,16 +2,54 @@
   "checked_date": "2026-10-25",
   "timezone": "Asia/Dubai",
   "accounts": {
-    "linkedin": {"name": "Gregory Gvadzabia", "profile": "https://www.linkedin.com/in/gregogv/", "verified_from": "Authenticated feed sidebar and native post composer"},
-    "x": {"name": "Grisha", "handle": "@grishahq", "profile": "https://x.com/grishahq", "verified_from": "Authenticated Account menu and Profile link"}
+    "linkedin": {
+      "name": "Gregory Gvadzabia",
+      "profile": "https://www.linkedin.com/in/gregogv/",
+      "verified_from": "Authenticated feed sidebar and native post composer"
+    },
+    "x": {
+      "name": "Grisha",
+      "handle": "@grishahq",
+      "profile": "https://x.com/grishahq",
+      "verified_from": "Authenticated Account menu and Profile link"
+    }
   },
   "native_queue_before": {
-    "linkedin": [{"scheduled_local": "2026-10-26T03:14:00+04:00", "subject": "recursive-llm v0.5.0 first PyPI release", "action": "preserved"}],
-    "x": [{"scheduled_local": "2026-10-26T03:14:00+04:00", "subject": "recursive-llm v0.5.0 first PyPI release", "action": "preserved"}]
+    "linkedin": [
+      {
+        "scheduled_local": "2026-10-26T03:14:00+04:00",
+        "subject": "recursive-llm v0.5.0 first PyPI release",
+        "action": "preserved"
+      }
+    ],
+    "x": [
+      {
+        "scheduled_local": "2026-10-26T03:14:00+04:00",
+        "subject": "recursive-llm v0.5.0 first PyPI release",
+        "action": "preserved"
+      }
+    ]
   },
-  "prepared": {"linkedin_posts": 5, "x_threads": 5},
-  "reserved": true,
+  "prepared": {
+    "linkedin_posts": 5,
+    "x_threads": 5
+  },
+  "reserved": false,
   "scheduled": [],
   "published": [],
-  "state": "Native accounts and queues verified; waiting for shared publishing lock before scheduling. X populated multi-post composer exposes Schedule; final behavior must be verified before claiming thread scheduling."
+  "state": "blocked_native_browser_reliability",
+  "reservation_history": {
+    "state": "released_unscheduled",
+    "dates": [
+      "2026-10-28",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-04",
+      "2026-11-06"
+    ],
+    "time": "10:00 Asia/Dubai",
+    "note": "Must recheck availability; no future delivery guaranteed."
+  },
+  "blocker": "Repeated timeouts/kernel resets during media upload and date selection; no final Schedule/Post/Post all action or scheduled queue confirmation.",
+  "evidence": "campaign/SCHEDULING-BLOCKER.md"
 }

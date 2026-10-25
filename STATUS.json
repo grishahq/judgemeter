@@ -29,7 +29,7 @@
     "tag_policy": "annotated tag, never rewritten"
   },
   "campaign": {
-    "state": "prepared",
+    "state": "prepared_scheduling_blocked",
     "linkedin_posts": 5,
     "x_threads": 5,
     "x_posts": 20,
@@ -46,7 +46,8 @@
       "2026-11-02T10:00:00+04:00",
       "2026-11-04T10:00:00+04:00",
       "2026-11-06T10:00:00+04:00"
-    ]
+    ],
+    "reservation_state": "released_unscheduled"
   },
   "evidence_paths": [
     "evidence/judgemeter-tests.txt",
@@ -59,13 +60,15 @@
     "evidence/release-readback.json",
     "evidence/tag-readback.json",
     "evidence/public-install.txt",
-    "campaign/CAMPAIGN.md"
+    "campaign/CAMPAIGN.md",
+    "campaign/publishing-readback.json",
+    "campaign/SCHEDULING-BLOCKER.md",
+    "evidence/public-unauthenticated-check.json"
   ],
   "blockers": [
-    "Awaiting shared publishing lock; held by toolcrop during native scheduling."
+    "Native social browser repeatedly timed out/reset during media and date preparation. Accounts and scheduling controls verified, but no schedule confirmation/readback obtained. See campaign/SCHEDULING-BLOCKER.md."
   ],
   "next_actions": [
-    "Inspect native queues and exact accounts under shared lock",
-    "Schedule supported series, record readback or concrete access/capability blocker"
+    "Use a stable authenticated native session or connected scheduler to schedule prepared campaign, recheck current free slots, and save native queue readback."
   ]
 }

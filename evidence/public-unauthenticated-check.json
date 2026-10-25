@@ -1,0 +1,9 @@
+{
+  "public_release_read": "passed without authentication",
+  "draft": false,
+  "prerelease": true,
+  "tag_object": "0554b55841832e00d47a4db4a7eb51ffb0e59148",
+  "tag_commit": "cbfcf591649a42fdec3fdf78e3a136df87b90378",
+  "public_wheel_digest": "matches downloaded and clean-installed wheel",
+  "release_url": "https://github.com/grishahq/judgemeter/releases/tag/v0.1.0"
+}

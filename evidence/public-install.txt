@@ -1,0 +1,2 @@
+JudgeMeter: 144 records; gate PASS; JSON .clean-public/public-report.json
+Public GitHub release wheel clean install, CLI demo, and retained scorer passed. 0.1.0

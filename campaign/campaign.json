@@ -1,0 +1,215 @@
+{
+  "language": "English",
+  "timezone": "Asia/Dubai",
+  "release": "https://github.com/grishahq/judgemeter/releases/tag/v0.1.0",
+  "prepared": true,
+  "scheduled": [],
+  "published": [],
+  "items": [
+    {
+      "id": "01-problem",
+      "audience": "LLM application engineers using judges to select prompts or release candidates",
+      "hook": "Your answer did not change. Its grade did.",
+      "evidence": [
+        "examples/judgemeter/synthetic-records.json",
+        "evidence/demo-report.json",
+        "evidence/gate-failure-report.json"
+      ],
+      "image": "assets/same-answer-concept.png",
+      "alt_text": "Conceptual illustration: one fixed answer enters two grading paths, receiving a teal check and amber cross. Text reads Same answer. Different grade. JudgeMeter. This is conceptual art, not a software screenshot.",
+      "cta": "Run the seeded example, then repeat a small set of your own fixed answers.",
+      "linkedin": "Your answer did not change. Its grade did.\n\nIf you use an LLM judge to choose a prompt, model or release candidate, that is a separate failure mode from the answer itself being bad. A plausible average can hide a judge that keeps changing its verdict on the very same answer.\n\nI built JudgeMeter to make that failure reproducible and inspectable. It is an experimental, attributed fork of Braintrust AutoEvals with a Python offline analysis layer. AutoEvals provides the scorer baseline; Braintrust already supports repeated trials. My addition analyzes those repetitions together.\n\nThe included synthetic example holds 12 inputs and outputs fixed, then supplies six trials for each of two illustrative judges. Both average 0.5. One has 100% pair agreement; the other has 40%. A configured CI comparison rejects the 0.60 agreement drop.\n\nThose are constructed sequences, not a measured model experiment. They demonstrate exactly what an average cannot tell you. No independent human labels means no accuracy claim.\n\nRun the seeded example, inspect the raw records, then repeat a small fixed-answer set from your own workflow. What would your current release gate miss?\n\nhttps://github.com/grishahq/judgemeter",
+      "x": [
+        "1/4 Your answer did not change. Its grade did. If an LLM judge helps choose your next prompt or release candidate, repeated disagreement on fixed answers deserves its own check.",
+        "2/4 JudgeMeter includes a reproducible synthetic failure: 12 fixed cases, 6 trials per judge. Both illustrative judges average 0.5. Pair agreement: 100% versus 40%. Same average, different consistency.",
+        "3/4 This is a constructed counterexample, not a real-model benchmark. No human labels, no accuracy claim. The CLI preserves raw records and can reject the 0.60 agreement drop in CI.",
+        "4/4 Experimental, attributed AutoEvals fork. Braintrust already repeats trials; JudgeMeter analyzes them offline. Start with the seeded demo, then try your own fixed answers: https://github.com/grishahq/judgemeter"
+      ],
+      "state": "prepared",
+      "linkedin_characters": 1208,
+      "x_characters": [
+        {
+          "raw": 177,
+          "url_weighted": 177
+        },
+        {
+          "raw": 201,
+          "url_weighted": 201
+        },
+        {
+          "raw": 181,
+          "url_weighted": 181
+        },
+        {
+          "raw": 213,
+          "url_weighted": 198
+        }
+      ]
+    },
+    {
+      "id": "02-tradeoff",
+      "audience": "Evaluation infrastructure engineers and researchers choosing judge metrics",
+      "hook": "Repeating the judge is easy. Choosing what agreement means takes care.",
+      "evidence": [
+        "docs/judgemeter/FORMAT.md",
+        "tests/judgemeter/test_analysis.py",
+        "evidence/statistics-check.json"
+      ],
+      "image": "assets/consistency-not-correctness.png",
+      "alt_text": "Conceptual illustration of a compass drawing repeated circles apart from a target. Text reads Consistent is not always correct. JudgeMeter. This is a metaphor, not an evidence plot.",
+      "cta": "Read the statistical contract and challenge the assumptions against your sampling design.",
+      "linkedin": "Repeating the judge is easy. Choosing what agreement means takes care.\n\nThe straightforward approach is to collect more scores and average them. That gives a useful aggregate, but it does not show whether the same answer repeatedly crosses your pass/fail boundary. Majority voting can hide that variation too.\n\nJudgeMeter reports all-pairs verdict agreement per fixed case, alongside consecutive-trial flips and missing/invalid scores. You choose the numeric threshold. Macro agreement gives cases equal weight; pooled agreement weights by the number of valid pairs. They answer different questions when trial counts vary.\n\nThe tradeoff is explicit: thresholding loses variation inside each category. A score moving from 0.51 to 0.99 does not change its verdict at a 0.5 threshold. The raw numeric scores remain in the report so you can inspect that limitation.\n\nFleiss' kappa is guarded rather than forced onto every dataset. v0.1 requires complete cases with equal trial counts and reports undefined results with a reason. Prevalence and correlated trials still matter; a correct formula cannot rescue a weak sampling design.\n\nAnd consistency does not establish correctness. A judge can repeat the same wrong decision perfectly. Accuracy needs independently reviewed human labels.\n\nRead the formulas and assumptions before choosing a gate:\nhttps://github.com/grishahq/judgemeter/blob/main/docs/judgemeter/FORMAT.md",
+      "x": [
+        "1/4 More judge trials plus an average still cannot show every fixed-answer verdict flip. JudgeMeter keeps means, but adds per-case pair agreement, ordered flips and missing/invalid counts.",
+        "2/4 You choose the pass threshold. That is a tradeoff: scores 0.51 and 0.99 have the same verdict at 0.5. Raw scores remain available. Macro agreement weights cases equally; pooled agreement weights valid pairs.",
+        "3/4 Kappa is not always defined. v0.1 requires complete, equal-size groups and nonconstant marginals. It reports insufficient evidence explicitly. Repeated trials may be correlated. Consistency is not correctness.",
+        "4/4 Accuracy needs independent human labels. Read the statistical contract, then challenge it against your own trial design: https://github.com/grishahq/judgemeter/blob/main/docs/judgemeter/FORMAT.md"
+      ],
+      "state": "prepared",
+      "linkedin_characters": 1416,
+      "x_characters": [
+        {
+          "raw": 188,
+          "url_weighted": 188
+        },
+        {
+          "raw": 211,
+          "url_weighted": 211
+        },
+        {
+          "raw": 213,
+          "url_weighted": 213
+        },
+        {
+          "raw": 199,
+          "url_weighted": 148
+        }
+      ]
+    },
+    {
+      "id": "03-solution",
+      "audience": "Engineers who want a local reproducible judge-analysis workflow",
+      "hook": "A judge report you can generate without an API key.",
+      "evidence": [
+        "evidence/demo-report.html",
+        "evidence/demo-report.json",
+        "evidence/public-install.txt",
+        "campaign/assets/real-report-screenshot.png"
+      ],
+      "image": "assets/real-report-screenshot.png",
+      "alt_text": "Actual JudgeMeter HTML report from the seeded synthetic demo. The stable judge shows 100.0% macro pair agreement, mean score 0.5, no missing or invalid scores and per-case trial details. The report labels the data synthetic and states consistency is not correctness.",
+      "cta": "Install the release in a fresh environment, generate the demo and inspect the JSON beside the HTML.",
+      "linkedin": "A judge report you can generate without an API key.\n\nJudgeMeter v0.1.0 is available as an experimental GitHub release. The screenshot is the actual HTML report produced by the CLI from the included seeded synthetic records.\n\nThe workflow is small: supply a JSON array of repeated evaluations, identify the case and judge configuration, keep the input and answer fixed, and export JSON plus a self-contained HTML report. Changed answers under the same case ID are rejected. Duplicate trials are rejected. Missing and invalid scores are counted separately.\n\nRun this after installing the release wheel in a fresh environment:\njudgemeter demo --records-out records.json --json report.json --html report.html --baseline stable --candidate variable\n\nOpen report.html, inspect each case, and keep report.json for CI or later analysis. The report contains the complete raw records; use only data you intend to share. The demo is synthetic and makes no model API calls.\n\nThe fork retains AutoEvals scorers and templates, including a working deterministic scorer baseline. Native Braintrust export importing is still roadmap work; v0.1 expects the documented portable record format.\n\nInstall, reproduce the report, and tell me which export format would remove the most friction in your workflow:\nhttps://github.com/grishahq/judgemeter/releases/tag/v0.1.0",
+      "x": [
+        "1/4 A judge report you can reproduce without an API key. JudgeMeter v0.1.0 accepts repeated fixed-answer JSON records and exports JSON plus self-contained HTML. The attached image is its actual synthetic demo report.",
+        "2/4 It rejects changed inputs/answers under the same case ID and duplicate trials. Missing and invalid scores are counted separately. Full raw records stay in the report so you can audit the result.",
+        "3/4 After installing the wheel in a fresh environment: judgemeter demo --records-out records.json --json report.json --html report.html. No model calls. Inspect the case table and preserved records.",
+        "4/4 Experimental AutoEvals fork; scorers and templates retained. Native Braintrust export importing is planned, not shipped. Install and reproduce the report: https://github.com/grishahq/judgemeter/releases/tag/v0.1.0"
+      ],
+      "state": "prepared",
+      "linkedin_characters": 1345,
+      "x_characters": [
+        {
+          "raw": 216,
+          "url_weighted": 216
+        },
+        {
+          "raw": 198,
+          "url_weighted": 198
+        },
+        {
+          "raw": 198,
+          "url_weighted": 198
+        },
+        {
+          "raw": 217,
+          "url_weighted": 182
+        }
+      ]
+    },
+    {
+      "id": "04-experiment",
+      "audience": "Engineers evaluating whether judge or rubric changes are usable",
+      "hook": "The mean-only check sees a tie. The consistency check sees a 0.60 drop.",
+      "evidence": [
+        "evidence/README.md",
+        "evidence/demo-report.json",
+        "evidence/statistics-check.json",
+        "evidence/gate-failure.txt",
+        "evidence/render_evidence.py"
+      ],
+      "image": "assets/demo-consistency-chart.png",
+      "alt_text": "Chart calculated from the synthetic JudgeMeter demo JSON. Both stable and variable judges have 50% mean score. Macro pair agreement is 100% for stable and 40% for variable. Caption states 12 fixed cases, six trials, two judges, seed 42, threshold 0.5, and no real-model or human-label accuracy comparison.",
+      "cta": "Reproduce the counterexample, then predeclare your own threshold and compare matched real cases.",
+      "linkedin": "The mean-only check sees a tie. The consistency check sees a 0.60 drop.\n\nHere is the full methodology behind JudgeMeter's demo chart. Twelve fixed cases. Six trials per case per illustrative judge. Binary scores. Pass threshold 0.5. Seed 42 controls the candidate's trial order. The chart is plotted from the exported JSON, not generated artwork.\n\nThe stable baseline gives six cases all 0s and six cases all 1s. The variable candidate gives every case three 0s and three 1s. Both average 0.5 across the same cases and trial budget.\n\nFor each variable case, 6 of 15 unordered trial pairs agree, so agreement is 0.4. Baseline agreement is 1.0. Fleiss' kappa is 1.0 versus -0.2. The configured maximum-drop gate exits 1, preserving the failed report for inspection.\n\nThat is a fair constructed comparison of what the two analyses expose. It is not a before/after model-quality improvement, a measured production benchmark, or proof that the stable judge is correct.\n\nThe implementation was checked against hand-calculated tests and 21 independent statsmodels tables; maximum kappa difference was about 2.22e-16. Those checks validate calculations, not the realism of the synthetic data.\n\nReproduce it, then predeclare a threshold and compare your own matched cases:\nhttps://github.com/grishahq/judgemeter/blob/main/evidence/README.md",
+      "x": [
+        "1/4 Mean-only check: tie. Consistency check: 0.60 drop. Synthetic methodology: 12 fixed cases, 6 trials per judge, binary scores, threshold 0.5, seed 42. The chart is calculated from exported JSON.",
+        "2/4 Baseline: six cases always 0, six always 1. Candidate: three 0s and three 1s on every case. Both mean 0.5. Candidate pair agreement = 6/15 = 0.4; baseline = 1.0. Kappa: -0.2 versus 1.0.",
+        "3/4 This is a constructed counterexample, not measured model improvement. The configured gate rejects the drop and preserves the report. Formulas also match 21 statsmodels checks within 2.22e-16; that does not validate real-world judge accuracy.",
+        "4/4 Reproduce the records, report, chart and expected CI failure. Then compare your own matched cases with a threshold chosen in advance: https://github.com/grishahq/judgemeter/blob/main/evidence/README.md"
+      ],
+      "state": "prepared",
+      "linkedin_characters": 1331,
+      "x_characters": [
+        {
+          "raw": 197,
+          "url_weighted": 197
+        },
+        {
+          "raw": 189,
+          "url_weighted": 189
+        },
+        {
+          "raw": 245,
+          "url_weighted": 245
+        },
+        {
+          "raw": 205,
+          "url_weighted": 161
+        }
+      ]
+    },
+    {
+      "id": "05-release",
+      "audience": "LLM evaluation teams and open-source contributors seeking a practical offline tool",
+      "hook": "JudgeMeter v0.1.0 is released, with a clean-install check and a reproducible starting point.",
+      "evidence": [
+        "evidence/release-readback.json",
+        "evidence/tag-readback.json",
+        "evidence/public-install.txt",
+        "evidence/judgemeter-tests.txt",
+        "evidence/upstream-offline-tests.txt"
+      ],
+      "image": "assets/real-report-screenshot.png",
+      "alt_text": "Actual HTML report from JudgeMeter v0.1.0 showing the synthetic stable judge summary and fixed-case table. This illustrates the release quickstart output, not an adoption or production result.",
+      "cta": "Download the wheel, run the demo, then report a concrete integration need or reproducible issue.",
+      "linkedin": "JudgeMeter v0.1.0 is released, with a clean-install check and a reproducible starting point.\n\nIt is an experimental Python CLI/library for analyzing repeated LLM-judge scores on fixed inputs and outputs. The public GitHub release includes a wheel, source distribution, demo/evidence bundle and checksums. I downloaded the public wheel into a fresh environment and ran both the JudgeMeter demo and a retained AutoEvals scorer.\n\nQuickstart: create a fresh Python 3.10+ environment, install the wheel linked in the release, then run:\njudgemeter demo --json report.json --html report.html\n\nTo analyze your own records, use the documented case/judge/trial/input/output/score format. Choose a pass threshold, inspect agreement and unusable-score counts, then add CI policy only when you understand the denominators and limitations.\n\nValidation: 55 JudgeMeter tests, nine retained offline upstream tests and 21 independent statistical cross-checks. A live-model upstream test could not run successfully without API credentials; that failed attempt is recorded. No measured model experiment or human-label accuracy claim is hidden behind the demo.\n\nCredit belongs to Braintrust AutoEvals for the retained scorer foundation. The fork keeps its history and MIT license. v0.2 targets real Braintrust export imports; v0.3 targets human-label calibration, guided by actual integration needs.\n\nTry the release and share a reproducible issue or the import format you need:\nhttps://github.com/grishahq/judgemeter/releases/tag/v0.1.0",
+      "x": [
+        "1/4 JudgeMeter v0.1.0 is released as experimental. Offline Python CLI/library for fixed-answer judge consistency. Public wheel, source, demo/evidence bundle and checksums; clean public-wheel install verified.",
+        "2/4 In a fresh Python 3.10+ environment, install the release wheel. Then run: judgemeter demo --json report.json --html report.html. The example is synthetic, requires no model key and preserves raw records.",
+        "3/4 Validation: 55 new tests, 9 retained offline upstream tests, 21 statsmodels checks. A live-model upstream test lacked credentials; its failure is recorded. No real-model benchmark or accuracy claim. Braintrust AutoEvals history and MIT license retained.",
+        "4/4 Next: real Braintrust imports, then human-label calibration based on usage. Try it and report an integration need or reproducible issue: https://github.com/grishahq/judgemeter/releases/tag/v0.1.0"
+      ],
+      "state": "prepared",
+      "linkedin_characters": 1516,
+      "x_characters": [
+        {
+          "raw": 208,
+          "url_weighted": 208
+        },
+        {
+          "raw": 207,
+          "url_weighted": 207
+        },
+        {
+          "raw": 257,
+          "url_weighted": 257
+        },
+        {
+          "raw": 199,
+          "url_weighted": 164
+        }
+      ]
+    }
+  ]
+}

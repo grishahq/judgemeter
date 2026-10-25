@@ -18,11 +18,24 @@
     "live_model_test": "unavailable: missing API credentials; failed attempt preserved"
   },
   "github_release": {
-    "state": "ready_to_publish",
-    "repository": "https://github.com/grishahq/judgemeter"
+    "state": "published",
+    "version": "0.1.0",
+    "maturity": "experimental prerelease",
+    "url": "https://github.com/grishahq/judgemeter/releases/tag/v0.1.0",
+    "tag_commit": "cbfcf59",
+    "public_wheel_clean_install": "passed",
+    "tag_policy": "annotated tag, never rewritten"
   },
   "campaign": {
-    "state": "assets_prepared_copy_pending",
+    "state": "prepared",
+    "linkedin_posts": 5,
+    "x_threads": 5,
+    "x_posts": 20,
+    "original_concept_assets": 2,
+    "actual_report_screenshot": true,
+    "data_chart": true,
+    "copy": "campaign/CAMPAIGN.md",
+    "machine_readable": "campaign/campaign.json",
     "scheduled": [],
     "published": []
   },
@@ -33,12 +46,17 @@
     "evidence/statistics-check.json",
     "evidence/clean-install.txt",
     "evidence/demo-report.json",
-    "campaign/ART-PROVENANCE.json"
+    "campaign/ART-PROVENANCE.json",
+    "evidence/release-readback.json",
+    "evidence/tag-readback.json",
+    "evidence/public-install.txt",
+    "campaign/CAMPAIGN.md"
   ],
-  "blockers": [],
+  "blockers": [
+    "Shared social-publish.lock temporarily held by callstencil; native social access check deferred."
+  ],
   "next_actions": [
-    "Publish and verify GitHub release",
-    "Write and validate complete campaign",
-    "Inspect scheduling access under shared lock"
+    "Inspect native queues and exact accounts under shared lock",
+    "Schedule supported series, record readback or concrete access/capability blocker"
   ]
 }

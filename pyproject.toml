@@ -3,12 +3,13 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "autoevals"
-dynamic = ["version"]
-description = "Universal library for evaluating AI models"
+name = "judgemeter"
+version = "0.1.0"
+description = "Offline consistency analysis for repeated fixed-answer LLM judge evaluations; attributed AutoEvals fork"
 readme = "README.md"
 requires-python = ">=3.10.0"
-authors = [{ name = "BrainTrust", email = "info@braintrustdata.com" }]
+authors = [{ name = "JudgeMeter contributors" }]
+license = {file = "LICENSE"}
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
@@ -22,8 +23,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://www.braintrustdata.com"
-"Bug Tracker" = "https://github.com/braintrustdata/autoevals"
+Homepage = "https://github.com/grishahq/judgemeter"
+"Bug Tracker" = "https://github.com/grishahq/judgemeter/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -50,7 +51,7 @@ dev = [
 doc = ["pydoc-markdown"]
 scipy = ["numpy", "scipy"]
 litellm = ["litellm>=1.60,<1.85"]
-all = ["autoevals[scipy]"]
+all = ["judgemeter[scipy]"]
 
 [tool.setuptools]
 package-dir = { "" = "py" }
@@ -59,8 +60,8 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["py"]
 
-[tool.setuptools.dynamic]
-version = { attr = "autoevals.version.VERSION" }
+[project.scripts]
+judgemeter = "judgemeter.__main__:main"
 
 [tool.black]
 line-length = 119

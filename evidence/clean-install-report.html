@@ -1,0 +1,2661 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JudgeMeter consistency report</title><style>
+    body{font:16px/1.6 system-ui,sans-serif;background:#101827;color:#e7edf7;margin:0;padding:40px;max-width:1200px}
+    h1{font-size:38px;margin:0}h2{color:#64dcc0}section{background:#1a2639;padding:24px;border-radius:14px;margin:24px 0}
+    .eyebrow{color:#64dcc0;letter-spacing:2px}.metrics{display:flex;gap:48px;flex-wrap:wrap}b{display:block;font-size:30px}
+    span{color:#b1bed0}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:9px;border-bottom:1px solid #3b4b62}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer}.notice{border-left:4px solid #e4b660;padding-left:16px}
+    </style><header><p class="eyebrow">JUDGEMETER / v0.1.0 EXPERIMENTAL</p><h1>Same answer. Consistent judgment?</h1>
+    <p>Repeated evaluations of fixed inputs and outputs · pass threshold ≥ 0.5</p>
+    <p class="notice">Data: synthetic_demo; seeded; no model API calls. Consistency is not correctness. No human-label accuracy claim.</p></header>
+    <section><h2>stable</h2><div class="metrics">
+        <div><b>100.0%</b><span>Macro pair agreement</span></div>
+        <div><b>0.5</b><span>Mean numeric score</span></div>
+        <div><b>0 / 0</b><span>Missing / invalid</span></div></div>
+        <p>Fleiss’ kappa: 1.0</p>
+        <table><thead><tr><th>Fixed case</th><th>Valid/total</th><th>Pair agreement</th><th>Flips/adjacent</th><th>Missing</th><th>Invalid</th></tr></thead><tbody><tr><td>fixed-00</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-01</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-02</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-03</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-04</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-05</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-06</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-07</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-08</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-09</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-10</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr><tr><td>fixed-11</td><td>6/6</td><td>100.0%</td><td>0/5</td><td>0</td><td>0</td></tr></tbody></table></section><section><h2>variable</h2><div class="metrics">
+        <div><b>40.0%</b><span>Macro pair agreement</span></div>
+        <div><b>0.5</b><span>Mean numeric score</span></div>
+        <div><b>0 / 0</b><span>Missing / invalid</span></div></div>
+        <p>Fleiss’ kappa: -0.19999999999999996</p>
+        <table><thead><tr><th>Fixed case</th><th>Valid/total</th><th>Pair agreement</th><th>Flips/adjacent</th><th>Missing</th><th>Invalid</th></tr></thead><tbody><tr><td>fixed-00</td><td>6/6</td><td>40.0%</td><td>4/5</td><td>0</td><td>0</td></tr><tr><td>fixed-01</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr><tr><td>fixed-02</td><td>6/6</td><td>40.0%</td><td>2/5</td><td>0</td><td>0</td></tr><tr><td>fixed-03</td><td>6/6</td><td>40.0%</td><td>2/5</td><td>0</td><td>0</td></tr><tr><td>fixed-04</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr><tr><td>fixed-05</td><td>6/6</td><td>40.0%</td><td>1/5</td><td>0</td><td>0</td></tr><tr><td>fixed-06</td><td>6/6</td><td>40.0%</td><td>4/5</td><td>0</td><td>0</td></tr><tr><td>fixed-07</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr><tr><td>fixed-08</td><td>6/6</td><td>40.0%</td><td>2/5</td><td>0</td><td>0</td></tr><tr><td>fixed-09</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr><tr><td>fixed-10</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr><tr><td>fixed-11</td><td>6/6</td><td>40.0%</td><td>3/5</td><td>0</td><td>0</td></tr></tbody></table></section><section><h2>Matched comparison</h2><pre>{
+  &quot;baseline&quot;: &quot;stable&quot;,
+  &quot;candidate&quot;: &quot;variable&quot;,
+  &quot;paired_cases&quot;: 12,
+  &quot;baseline_only&quot;: [],
+  &quot;candidate_only&quot;: [],
+  &quot;insufficient_cases&quot;: [],
+  &quot;agreement_delta&quot;: -0.6,
+  &quot;mean_score_delta&quot;: 0.0,
+  &quot;cases&quot;: [
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;baseline_agreement&quot;: 1.0,
+      &quot;candidate_agreement&quot;: 0.4
+    }
+  ],
+  &quot;method&quot;: &quot;candidate minus baseline, equal weight per matched case; descriptive, not a significance test&quot;
+}</pre></section><section><h2>Method and limits</h2><ul><li>Fixed input/output verified per case across all judges.</li><li>Verdict is pass when score &gt;= threshold; statistics use valid numeric scores only.</li><li>Agreement measures consistency, not accuracy. Trials are treated as exchangeable for kappa.</li><li>No confidence intervals, independence verification or statistical significance claim.</li><li>Absent trial rows cannot be counted as missing; submit explicit null scores.</li></ul>
+    <p>Pairs compare all unordered valid trials. Flips count consecutive integer trial IDs with two valid scores. Missing/invalid scores break adjacency. See FORMAT.md for denominators and kappa assumptions.</p></section>
+    <details><summary>Full report and preserved raw records</summary><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;threshold&quot;: 0.5,
+  &quot;data_kind&quot;: &quot;synthetic_demo; seeded; no model API calls&quot;,
+  &quot;assumptions&quot;: [
+    &quot;Fixed input/output verified per case across all judges.&quot;,
+    &quot;Verdict is pass when score &gt;= threshold; statistics use valid numeric scores only.&quot;,
+    &quot;Agreement measures consistency, not accuracy. Trials are treated as exchangeable for kappa.&quot;,
+    &quot;No confidence intervals, independence verification or statistical significance claim.&quot;,
+    &quot;Absent trial rows cannot be counted as missing; submit explicit null scores.&quot;
+  ],
+  &quot;judges&quot;: {
+    &quot;stable&quot;: {
+      &quot;cases&quot;: [
+        {
+          &quot;case_id&quot;: &quot;fixed-00&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-01&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-02&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-03&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-04&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-05&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-06&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-07&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-08&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-09&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-10&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.0,
+          &quot;pass_count&quot;: 0,
+          &quot;fail_count&quot;: 6,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-11&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 1.0,
+          &quot;pass_count&quot;: 6,
+          &quot;fail_count&quot;: 0,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 15,
+          &quot;pairwise_agreement&quot;: 1.0,
+          &quot;verdict_flips&quot;: 0,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.0,
+          &quot;majority_fraction&quot;: 1.0
+        }
+      ],
+      &quot;summary&quot;: {
+        &quot;n_cases&quot;: 12,
+        &quot;n_records&quot;: 72,
+        &quot;n_valid&quot;: 72,
+        &quot;missing&quot;: 0,
+        &quot;invalid&quot;: 0,
+        &quot;invalid_rate&quot;: 0.0,
+        &quot;missing_rate&quot;: 0.0,
+        &quot;unusable_rate&quot;: 0.0,
+        &quot;cases_insufficient&quot;: 0,
+        &quot;mean_score&quot;: 0.5,
+        &quot;macro_agreement&quot;: 1.0,
+        &quot;pairwise_agreement&quot;: 1.0,
+        &quot;fleiss_kappa&quot;: {
+          &quot;value&quot;: 1.0,
+          &quot;reason&quot;: null
+        }
+      }
+    },
+    &quot;variable&quot;: {
+      &quot;cases&quot;: [
+        {
+          &quot;case_id&quot;: &quot;fixed-00&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 4,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.8,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-01&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-02&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 2,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.4,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-03&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 2,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.4,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-04&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-05&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 1,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.2,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-06&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 4,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.8,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-07&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-08&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 2,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.4,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-09&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-10&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        },
+        {
+          &quot;case_id&quot;: &quot;fixed-11&quot;,
+          &quot;n_records&quot;: 6,
+          &quot;n_valid&quot;: 6,
+          &quot;missing&quot;: 0,
+          &quot;invalid&quot;: 0,
+          &quot;mean_score&quot;: 0.5,
+          &quot;pass_count&quot;: 3,
+          &quot;fail_count&quot;: 3,
+          &quot;valid_pairs&quot;: 15,
+          &quot;agreeing_pairs&quot;: 6,
+          &quot;pairwise_agreement&quot;: 0.4,
+          &quot;verdict_flips&quot;: 3,
+          &quot;adjacent_pairs&quot;: 5,
+          &quot;flip_rate&quot;: 0.6,
+          &quot;majority_fraction&quot;: 0.5
+        }
+      ],
+      &quot;summary&quot;: {
+        &quot;n_cases&quot;: 12,
+        &quot;n_records&quot;: 72,
+        &quot;n_valid&quot;: 72,
+        &quot;missing&quot;: 0,
+        &quot;invalid&quot;: 0,
+        &quot;invalid_rate&quot;: 0.0,
+        &quot;missing_rate&quot;: 0.0,
+        &quot;unusable_rate&quot;: 0.0,
+        &quot;cases_insufficient&quot;: 0,
+        &quot;mean_score&quot;: 0.5,
+        &quot;macro_agreement&quot;: 0.4,
+        &quot;pairwise_agreement&quot;: 0.4,
+        &quot;fleiss_kappa&quot;: {
+          &quot;value&quot;: -0.19999999999999996,
+          &quot;reason&quot;: null
+        }
+      }
+    }
+  },
+  &quot;raw_records&quot;: [
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-00&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 0&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 0&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-01&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 1&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 1&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-02&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 2&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 2&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-03&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 3&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 3&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-04&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 4&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 4&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-05&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 5&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 5&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-06&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 6&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 6&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-07&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 7&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 7&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-08&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 8&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 8&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-09&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 9&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 9&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-10&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 10&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 10&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;stable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 0,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 1,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 2,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 3,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 0.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 4,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    },
+    {
+      &quot;case_id&quot;: &quot;fixed-11&quot;,
+      &quot;judge&quot;: &quot;variable&quot;,
+      &quot;trial&quot;: 5,
+      &quot;input&quot;: {
+        &quot;question&quot;: &quot;Synthetic fixed prompt 11&quot;
+      },
+      &quot;output&quot;: {
+        &quot;answer&quot;: &quot;Synthetic fixed answer 11&quot;
+      },
+      &quot;score&quot;: 1.0,
+      &quot;provenance&quot;: &quot;synthetic_demo&quot;,
+      &quot;seed&quot;: 42
+    }
+  ],
+  &quot;comparison&quot;: {
+    &quot;baseline&quot;: &quot;stable&quot;,
+    &quot;candidate&quot;: &quot;variable&quot;,
+    &quot;paired_cases&quot;: 12,
+    &quot;baseline_only&quot;: [],
+    &quot;candidate_only&quot;: [],
+    &quot;insufficient_cases&quot;: [],
+    &quot;agreement_delta&quot;: -0.6,
+    &quot;mean_score_delta&quot;: 0.0,
+    &quot;cases&quot;: [
+      {
+        &quot;case_id&quot;: &quot;fixed-00&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-01&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-02&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-03&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-04&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-05&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-06&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-07&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-08&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-09&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-10&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      },
+      {
+        &quot;case_id&quot;: &quot;fixed-11&quot;,
+        &quot;baseline_agreement&quot;: 1.0,
+        &quot;candidate_agreement&quot;: 0.4
+      }
+    ],
+    &quot;method&quot;: &quot;candidate minus baseline, equal weight per matched case; descriptive, not a significance test&quot;
+  },
+  &quot;gate&quot;: {
+    &quot;passed&quot;: true,
+    &quot;failures&quot;: [],
+    &quot;policy&quot;: {
+      &quot;min_agreement&quot;: null,
+      &quot;max_invalid_rate&quot;: null,
+      &quot;max_unusable_rate&quot;: null,
+      &quot;max_agreement_drop&quot;: null
+    }
+  }
+}</pre></details></html>

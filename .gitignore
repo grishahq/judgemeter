@@ -16,3 +16,8 @@ autoevals-*.tgz
 typedoc.json
 build
 .turbo
+.venv/
+.pytest_cache/
+__pycache__/
+*.egg-info/
+.clean-*/

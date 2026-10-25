@@ -1,0 +1,338 @@
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=61
+* Getting build dependencies for sdist...
+running egg_info
+writing py/judgemeter.egg-info/PKG-INFO
+writing dependency_links to py/judgemeter.egg-info/dependency_links.txt
+writing entry points to py/judgemeter.egg-info/entry_points.txt
+writing requirements to py/judgemeter.egg-info/requires.txt
+writing top-level names to py/judgemeter.egg-info/top_level.txt
+reading manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+WARNING `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+* Installed build dependency versions:
+  - setuptools==84.2.1
+* Building sdist...
+running sdist
+running egg_info
+writing py/judgemeter.egg-info/PKG-INFO
+writing dependency_links to py/judgemeter.egg-info/dependency_links.txt
+writing entry points to py/judgemeter.egg-info/entry_points.txt
+writing requirements to py/judgemeter.egg-info/requires.txt
+writing top-level names to py/judgemeter.egg-info/top_level.txt
+reading manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+running check
+creating judgemeter-0.1.0
+creating judgemeter-0.1.0/docs/judgemeter
+creating judgemeter-0.1.0/evidence
+creating judgemeter-0.1.0/examples/judgemeter
+creating judgemeter-0.1.0/py/autoevals
+creating judgemeter-0.1.0/py/autoevals/templates
+creating judgemeter-0.1.0/py/judgemeter
+creating judgemeter-0.1.0/py/judgemeter.egg-info
+creating judgemeter-0.1.0/tests/judgemeter
+copying files to judgemeter-0.1.0...
+copying CHANGELOG.md -> judgemeter-0.1.0
+copying LICENSE -> judgemeter-0.1.0
+copying MANIFEST.in -> judgemeter-0.1.0
+copying PLAN.md -> judgemeter-0.1.0
+copying README.md -> judgemeter-0.1.0
+copying UPSTREAM.md -> judgemeter-0.1.0
+copying pyproject.toml -> judgemeter-0.1.0
+copying docs/judgemeter/FORMAT.md -> judgemeter-0.1.0/docs/judgemeter
+copying evidence/README.md -> judgemeter-0.1.0/evidence
+copying evidence/verify_statistics.py -> judgemeter-0.1.0/evidence
+copying examples/judgemeter/synthetic-records.json -> judgemeter-0.1.0/examples/judgemeter
+copying py/autoevals/__init__.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/conftest.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/json.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/list.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/litellm.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/llm.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/moderation.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/number.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/oai.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/partial.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/ragas.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/score.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/serializable_data_class.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/string.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_embeddings.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_init_models.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_json.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_litellm.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_llm.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_moderation.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_oai.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_partial.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_ragas.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_reasoning_effort.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_serializable_data_class.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/test_values.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/thread_utils.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/value.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/version.py -> judgemeter-0.1.0/py/autoevals
+copying py/autoevals/templates/battle.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/closed_q_a.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/factuality.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/humor.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/possible.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/security.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/sql.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/summary.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/autoevals/templates/translation.yaml -> judgemeter-0.1.0/py/autoevals/templates
+copying py/judgemeter/__init__.py -> judgemeter-0.1.0/py/judgemeter
+copying py/judgemeter/__main__.py -> judgemeter-0.1.0/py/judgemeter
+copying py/judgemeter/analysis.py -> judgemeter-0.1.0/py/judgemeter
+copying py/judgemeter/demo.py -> judgemeter-0.1.0/py/judgemeter
+copying py/judgemeter/report.py -> judgemeter-0.1.0/py/judgemeter
+copying py/judgemeter.egg-info/PKG-INFO -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying py/judgemeter.egg-info/SOURCES.txt -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying py/judgemeter.egg-info/dependency_links.txt -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying py/judgemeter.egg-info/entry_points.txt -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying py/judgemeter.egg-info/requires.txt -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying py/judgemeter.egg-info/top_level.txt -> judgemeter-0.1.0/py/judgemeter.egg-info
+copying tests/judgemeter/test_analysis.py -> judgemeter-0.1.0/tests/judgemeter
+Writing judgemeter-0.1.0/setup.cfg
+Creating tar archive
+removing 'judgemeter-0.1.0' (and everything under it)
+WARNING `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+* Building wheel from sdist
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=61
+* Getting build dependencies for wheel...
+running egg_info
+writing py/judgemeter.egg-info/PKG-INFO
+writing dependency_links to py/judgemeter.egg-info/dependency_links.txt
+writing entry points to py/judgemeter.egg-info/entry_points.txt
+writing requirements to py/judgemeter.egg-info/requires.txt
+writing top-level names to py/judgemeter.egg-info/top_level.txt
+reading manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+WARNING `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+* Installed build dependency versions:
+  - setuptools==84.2.1
+* Building wheel...
+running bdist_wheel
+running build
+running build_py
+creating build/lib/autoevals
+copying py/autoevals/test_serializable_data_class.py -> build/lib/autoevals
+copying py/autoevals/test_ragas.py -> build/lib/autoevals
+copying py/autoevals/conftest.py -> build/lib/autoevals
+copying py/autoevals/version.py -> build/lib/autoevals
+copying py/autoevals/list.py -> build/lib/autoevals
+copying py/autoevals/test_llm.py -> build/lib/autoevals
+copying py/autoevals/test_oai.py -> build/lib/autoevals
+copying py/autoevals/test_init_models.py -> build/lib/autoevals
+copying py/autoevals/test_embeddings.py -> build/lib/autoevals
+copying py/autoevals/moderation.py -> build/lib/autoevals
+copying py/autoevals/number.py -> build/lib/autoevals
+copying py/autoevals/__init__.py -> build/lib/autoevals
+copying py/autoevals/llm.py -> build/lib/autoevals
+copying py/autoevals/oai.py -> build/lib/autoevals
+copying py/autoevals/serializable_data_class.py -> build/lib/autoevals
+copying py/autoevals/test_moderation.py -> build/lib/autoevals
+copying py/autoevals/litellm.py -> build/lib/autoevals
+copying py/autoevals/ragas.py -> build/lib/autoevals
+copying py/autoevals/test_values.py -> build/lib/autoevals
+copying py/autoevals/test_litellm.py -> build/lib/autoevals
+copying py/autoevals/test_reasoning_effort.py -> build/lib/autoevals
+copying py/autoevals/value.py -> build/lib/autoevals
+copying py/autoevals/string.py -> build/lib/autoevals
+copying py/autoevals/partial.py -> build/lib/autoevals
+copying py/autoevals/test_json.py -> build/lib/autoevals
+copying py/autoevals/json.py -> build/lib/autoevals
+copying py/autoevals/test_partial.py -> build/lib/autoevals
+copying py/autoevals/thread_utils.py -> build/lib/autoevals
+copying py/autoevals/score.py -> build/lib/autoevals
+creating build/lib/judgemeter
+copying py/judgemeter/analysis.py -> build/lib/judgemeter
+copying py/judgemeter/__init__.py -> build/lib/judgemeter
+copying py/judgemeter/demo.py -> build/lib/judgemeter
+copying py/judgemeter/__main__.py -> build/lib/judgemeter
+copying py/judgemeter/report.py -> build/lib/judgemeter
+running egg_info
+writing py/judgemeter.egg-info/PKG-INFO
+writing dependency_links to py/judgemeter.egg-info/dependency_links.txt
+writing entry points to py/judgemeter.egg-info/entry_points.txt
+writing requirements to py/judgemeter.egg-info/requires.txt
+writing top-level names to py/judgemeter.egg-info/top_level.txt
+reading manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'py/judgemeter.egg-info/SOURCES.txt'
+creating build/lib/autoevals/templates
+copying py/autoevals/templates/battle.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/closed_q_a.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/factuality.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/humor.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/possible.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/security.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/sql.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/summary.yaml -> build/lib/autoevals/templates
+copying py/autoevals/templates/translation.yaml -> build/lib/autoevals/templates
+installing to build/bdist.macosx-15.0-arm64/wheel
+running install
+running install_lib
+creating build/bdist.macosx-15.0-arm64/wheel
+creating build/bdist.macosx-15.0-arm64/wheel/autoevals
+copying build/lib/autoevals/test_serializable_data_class.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_ragas.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/conftest.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/version.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/list.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_llm.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_oai.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_init_models.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_embeddings.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/moderation.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/number.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/llm.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/oai.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/serializable_data_class.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_moderation.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/litellm.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/ragas.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_values.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_litellm.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+creating build/bdist.macosx-15.0-arm64/wheel/autoevals/templates
+copying build/lib/autoevals/templates/humor.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/summary.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/security.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/closed_q_a.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/possible.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/factuality.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/translation.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/sql.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/templates/battle.yaml -> build/bdist.macosx-15.0-arm64/wheel/./autoevals/templates
+copying build/lib/autoevals/test_reasoning_effort.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/value.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/string.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/partial.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_json.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/json.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/test_partial.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/thread_utils.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+copying build/lib/autoevals/score.py -> build/bdist.macosx-15.0-arm64/wheel/./autoevals
+creating build/bdist.macosx-15.0-arm64/wheel/judgemeter
+copying build/lib/judgemeter/analysis.py -> build/bdist.macosx-15.0-arm64/wheel/./judgemeter
+copying build/lib/judgemeter/__init__.py -> build/bdist.macosx-15.0-arm64/wheel/./judgemeter
+copying build/lib/judgemeter/demo.py -> build/bdist.macosx-15.0-arm64/wheel/./judgemeter
+copying build/lib/judgemeter/__main__.py -> build/bdist.macosx-15.0-arm64/wheel/./judgemeter
+copying build/lib/judgemeter/report.py -> build/bdist.macosx-15.0-arm64/wheel/./judgemeter
+running install_egg_info
+Copying py/judgemeter.egg-info to build/bdist.macosx-15.0-arm64/wheel/./judgemeter-0.1.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.macosx-15.0-arm64/wheel/judgemeter-0.1.0.dist-info/WHEEL
+creating '/Users/g/Documents/Projects/OPEN_SOURCE/judgemeter/dist/.tmp-arrjjaee/judgemeter-0.1.0-py3-none-any.whl' and adding 'build/bdist.macosx-15.0-arm64/wheel' to it
+adding 'autoevals/__init__.py'
+adding 'autoevals/conftest.py'
+adding 'autoevals/json.py'
+adding 'autoevals/list.py'
+adding 'autoevals/litellm.py'
+adding 'autoevals/llm.py'
+adding 'autoevals/moderation.py'
+adding 'autoevals/number.py'
+adding 'autoevals/oai.py'
+adding 'autoevals/partial.py'
+adding 'autoevals/ragas.py'
+adding 'autoevals/score.py'
+adding 'autoevals/serializable_data_class.py'
+adding 'autoevals/string.py'
+adding 'autoevals/test_embeddings.py'
+adding 'autoevals/test_init_models.py'
+adding 'autoevals/test_json.py'
+adding 'autoevals/test_litellm.py'
+adding 'autoevals/test_llm.py'
+adding 'autoevals/test_moderation.py'
+adding 'autoevals/test_oai.py'
+adding 'autoevals/test_partial.py'
+adding 'autoevals/test_ragas.py'
+adding 'autoevals/test_reasoning_effort.py'
+adding 'autoevals/test_serializable_data_class.py'
+adding 'autoevals/test_values.py'
+adding 'autoevals/thread_utils.py'
+adding 'autoevals/value.py'
+adding 'autoevals/version.py'
+adding 'autoevals/templates/battle.yaml'
+adding 'autoevals/templates/closed_q_a.yaml'
+adding 'autoevals/templates/factuality.yaml'
+adding 'autoevals/templates/humor.yaml'
+adding 'autoevals/templates/possible.yaml'
+adding 'autoevals/templates/security.yaml'
+adding 'autoevals/templates/sql.yaml'
+adding 'autoevals/templates/summary.yaml'
+adding 'autoevals/templates/translation.yaml'
+adding 'judgemeter/__init__.py'
+adding 'judgemeter/__main__.py'
+adding 'judgemeter/analysis.py'
+adding 'judgemeter/demo.py'
+adding 'judgemeter/report.py'
+adding 'judgemeter-0.1.0.dist-info/licenses/LICENSE'
+adding 'judgemeter-0.1.0.dist-info/METADATA'
+adding 'judgemeter-0.1.0.dist-info/WHEEL'
+adding 'judgemeter-0.1.0.dist-info/entry_points.txt'
+adding 'judgemeter-0.1.0.dist-info/top_level.txt'
+adding 'judgemeter-0.1.0.dist-info/RECORD'
+removing build/bdist.macosx-15.0-arm64/wheel
+WARNING `project.license` as a TOML table is deprecated
+!!
+
+        ********************************************************************************
+        Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+
+        By 2027-Feb-18, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+Successfully built judgemeter-0.1.0.tar.gz and judgemeter-0.1.0-py3-none-any.whl

@@ -1,1 +1,6 @@
 recursive-include py/autoevals/templates *
+include PLAN.md UPSTREAM.md CHANGELOG.md
+recursive-include docs/judgemeter *.md
+recursive-include tests/judgemeter *.py
+recursive-include examples/judgemeter *.json
+include evidence/verify_statistics.py evidence/README.md

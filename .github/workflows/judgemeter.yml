@@ -1,0 +1,19 @@
+name: JudgeMeter offline checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e . pytest statsmodels respx pytest-asyncio pytest-mock openai braintrust build twine
+      - run: pytest -q tests/judgemeter py/autoevals/test_values.py py/autoevals/test_json.py py/autoevals/test_serializable_data_class.py
+      - run: python evidence/verify_statistics.py
+      - run: python -m build && python -m twine check dist/*

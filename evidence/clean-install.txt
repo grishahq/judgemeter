@@ -1,0 +1,2 @@
+JudgeMeter: 144 records; gate PASS; JSON evidence/clean-install-report.json
+Clean wheel install, JudgeMeter demo, and retained AutoEvals ExactMatch passed: 0.1.0

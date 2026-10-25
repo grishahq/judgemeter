@@ -1,0 +1,2018 @@
+[
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-00",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 0"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 0"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-01",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 1"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 1"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-02",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 2"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 2"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-03",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 3"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 3"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-04",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 4"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 4"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-05",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 5"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 5"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-06",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 6"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 6"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-07",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 7"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 7"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-08",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 8"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 8"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-09",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 9"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 9"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-10",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 10"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 10"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "stable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 0,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 1,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 2,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 3,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 0.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 4,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  },
+  {
+    "case_id": "fixed-11",
+    "judge": "variable",
+    "trial": 5,
+    "input": {
+      "question": "Synthetic fixed prompt 11"
+    },
+    "output": {
+      "answer": "Synthetic fixed answer 11"
+    },
+    "score": 1.0,
+    "provenance": "synthetic_demo",
+    "seed": 42
+  }
+]

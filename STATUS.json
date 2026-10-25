@@ -1,0 +1,44 @@
+{
+  "project": "JudgeMeter",
+  "language": "English",
+  "plan": {
+    "state": "complete",
+    "path": "PLAN.md"
+  },
+  "implementation": {
+    "state": "complete",
+    "version": "0.1.0"
+  },
+  "validation": {
+    "state": "passed",
+    "judgemeter_tests": 55,
+    "upstream_offline_tests": 9,
+    "statsmodels_tables": 21,
+    "clean_wheel_install": "passed",
+    "live_model_test": "unavailable: missing API credentials; failed attempt preserved"
+  },
+  "github_release": {
+    "state": "ready_to_publish",
+    "repository": "https://github.com/grishahq/judgemeter"
+  },
+  "campaign": {
+    "state": "assets_prepared_copy_pending",
+    "scheduled": [],
+    "published": []
+  },
+  "evidence_paths": [
+    "evidence/judgemeter-tests.txt",
+    "evidence/upstream-offline-tests.txt",
+    "evidence/upstream-tests.txt",
+    "evidence/statistics-check.json",
+    "evidence/clean-install.txt",
+    "evidence/demo-report.json",
+    "campaign/ART-PROVENANCE.json"
+  ],
+  "blockers": [],
+  "next_actions": [
+    "Publish and verify GitHub release",
+    "Write and validate complete campaign",
+    "Inspect scheduling access under shared lock"
+  ]
+}

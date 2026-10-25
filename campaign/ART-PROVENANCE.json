@@ -1,0 +1,19 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-25",
+  "assets": [
+    {
+      "file": "assets/same-answer-concept.png",
+      "prompt": "Use case: ads-marketing\nAsset type: English open-source launch conceptual illustration, landscape\nPrimary request: JudgeMeter campaign artwork about the same fixed answer receiving inconsistent judgments. A single paper answer card goes through a split mechanical judging instrument, one side stamping a subtle check and another side a subtle cross. Refined editorial 3D paper-and-metal illustration, dark navy background, teal and amber accents, generous negative space, crisp professional craft. The card stays identical; the two judging paths disagree. Text (verbatim): \"Same answer. Different grade.\" and small \"JudgeMeter\". Constraints: conceptual art only, no UI mockup, no charts, no numbers, no invented metrics, no testimonials, no company logos, English text only, no watermark.",
+      "source": "/Users/g/.codex/generated_images/01a1746d-d072-7ff1-9a11-aa433fe6baec/exec-71269145-037a-4c9b-973b-8b2a31c8aec7.png",
+      "inspection": "English headline and JudgeMeter spelling correct. Conceptual machinery and duplicated fixed paper illustrate inconsistent grading; not a product screenshot or evidence."
+    },
+    {
+      "file": "assets/consistency-not-correctness.png",
+      "prompt": "Use case: ads-marketing\nAsset type: English JudgeMeter campaign conceptual artwork, landscape\nPrimary request: editorial conceptual illustration showing that consistency does not establish correctness. A beautiful precision compass draws the same repeated circle on an elegant drafting desk, but the intended target mark sits clearly offset from that circle. No numbers or plotted axes. Navy, cream, teal, restrained amber palette; tactile paper and brushed metal, warm studio light, sophisticated open-source engineering launch style. Text (verbatim): \"Consistent is not always correct.\" and smaller \"JudgeMeter\". Constraints: conceptual metaphor, no software UI, no evidence chart, no fake metrics, no testimonials, no company logos, English only, no watermark.",
+      "source": "/Users/g/.codex/generated_images/01a1746d-d072-7ff1-9a11-aa433fe6baec/exec-2ffedf5b-ec81-4879-addc-cbf232801ab5.png",
+      "inspection": "English text correct. Compass repeats circles apart from target. Conceptual illustration only."
+    }
+  ],
+  "direction": "Navy, cream, teal and restrained amber. Editorial mechanical/paper metaphors. Clear large English copy. Concepts never contain experimental numbers or invented UI; actual charts/screenshots retain synthetic-data disclosure."
+}

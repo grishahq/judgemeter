@@ -1,0 +1,2 @@
+Gate failure: comparison: candidate agreement drop exceeds maximum
+JudgeMeter: 144 records; gate FAIL; JSON evidence/gate-failure-report.json
